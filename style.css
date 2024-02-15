@@ -194,23 +194,33 @@ body {
   justify-content: space-evenly;
   width: 100%;
 }
-#primg {
+#primg,
+#primg2,
+#primg3 {
   width: 20%;
 }
-#primg img {
+#primg img,
+#primg2 img,
+#primg3 img {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-#prcon {
+#prcon,
+#prcon2,
+#prcon3 {
   width: 80%;
   padding: 1vw;
   margin-top: -26px;
 }
-#prcon h3 {
+#prcon h3,
+#prcon2 h3,
+#prcon3 h3 {
   color: #d1d7e6;
 }
-#prcon p {
+#prcon p,
+#prcon2 p,
+#prcon3 p {
   margin-top: -15px;
 }
 @media (max-width: 834px) {
@@ -218,10 +228,14 @@ body {
     flex-direction: column;
     align-items: start;
   }
-  #primg {
+  #primg,
+  #primg2,
+  #primg3 {
     width: 100%;
   }
-  #prcon {
+  #prcon,
+  #prcon2,
+  #prcon3 {
     width: 100%;
     margin-top: -15px;
   }
