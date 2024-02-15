@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const projectDesc = projectContainer.querySelector("p");
       const projectName = projectNames.length > 0 ? projectNames[0].trim() : "";
       const projectDescription = data[0].projects_description;
+      const skillsContainer = document.querySelector("#skills #skills1");
 
       h1Element.textContent = fullName;
       h2Element.textContent = rolePosition;
@@ -72,9 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const thirdProjectName =
         projectNames.length > 2 ? projectNames[2].trim() : "";
       const thirdProjectDescription = data[0].ProjectDescriptionThree;
-
       projectTitle3.textContent = thirdProjectName;
       projectDesc3.textContent = thirdProjectDescription;
+
+      // Clear existing skills in the skills container
+      skillsContainer.innerHTML = "";
+      // Add all skills to the skills container
+      skills.split(",").forEach((skill) => {
+        const skillParagraph = document.createElement("p");
+        skillParagraph.textContent = skill.trim();
+        skillsContainer.appendChild(skillParagraph);
+      });
     })
     .catch((error) => {
       console.error("Error fetching personal information:", error);

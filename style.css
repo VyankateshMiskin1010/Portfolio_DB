@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  overflow: auto; /* Enable scrolling for the entire site */
+  overflow: auto;
   font-family: "Inter", sans-serif;
 }
 #mouseEffect {
@@ -29,10 +29,10 @@ body {
   color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  width: 100%; /* Full width on mobile */
-  height: auto; /* Auto height for mobile */
-  position: relative; /* Reset position for mobile */
-  overflow-y: hidden; /* Make the sidebar scrollable vertically on mobile */
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-y: hidden;
 }
 #sidebar img {
   width: 40%;
@@ -49,7 +49,6 @@ body {
 #sidebar h1 {
   font-size: 2.68rem;
   color: #d1d7e6;
-
   /* line-height: 1; */
 }
 #sidebar h2 {
@@ -81,9 +80,9 @@ body {
   background-color: #0f172a;
   color: #fff;
   box-sizing: border-box;
-  width: 100%; /* Full width on mobile */
-  margin-left: 0; /* Reset margin for mobile */
-  overflow-y: auto; /* Make the content scrollable vertically on mobile */
+  width: 100%;
+  margin-left: 0;
+  overflow-y: auto;
   line-height: 1.5;
   color: #8297bc;
 }
@@ -103,8 +102,8 @@ body {
 
   #sidebar {
     width: 50%;
-    height: 100vh; /* Set a fixed height for the sidebar on larger screens */
-    position: fixed; /* Fixed position to make it non-scrollable on larger screens */
+    height: 100vh;
+    position: fixed;
     padding: 5vw 12vw 0vw 12vw;
   }
 
@@ -115,7 +114,7 @@ body {
 
   #content {
     width: 50%;
-    margin-left: 50%; /* Adjust margin to accommodate the sidebar width on larger screens */
+    margin-left: 50%;
     padding: 5vw 12vw 0vw 4vw;
   }
 }
@@ -130,17 +129,22 @@ body {
 .icons {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 #nav-options a:hover {
-  background-color: #333; /* Background color on hover */
+  border-bottom: 2px solid #54d3d4;
 }
 
 #nav-options a.active,
 #nav-options a:active {
-  background-color: #555; /* Background color when active */
+  border-bottom: 1px solid #54d3d4;
+}
+.fa {
+  color: #54d4d47a;
 }
 /* Experience */
+
 #exp {
   display: flex;
   justify-content: space-between;
