@@ -140,14 +140,14 @@ body {
 #nav-options a:active {
   background-color: #555; /* Background color when active */
 }
+/* Experience */
 #exp {
   display: flex;
   justify-content: space-between;
-
   width: 100%;
 }
 #year {
-  width: 10%;
+  width: 20%;
 }
 #year p {
   font-size: 0.8rem;
@@ -187,4 +187,42 @@ body {
   border-radius: 20px;
   font-size: 0.8rem;
   display: inline-block;
+}
+/* Projects */
+#prcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+#primg {
+  width: 20%;
+}
+#primg img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#prcon {
+  width: 80%;
+  padding: 1vw;
+  margin-top: -26px;
+}
+#prcon h3 {
+  color: #d1d7e6;
+}
+#prcon p {
+  margin-top: -15px;
+}
+@media (max-width: 834px) {
+  #prcontainer {
+    flex-direction: column;
+    align-items: start;
+  }
+  #primg {
+    width: 100%;
+  }
+  #prcon {
+    width: 100%;
+    margin-top: -15px;
+  }
 }

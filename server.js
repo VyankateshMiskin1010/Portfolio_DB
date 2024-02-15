@@ -32,6 +32,7 @@ app.get("/api/personal_info", (req, res) => {
           // Send the JSON response
           res.send(JSON.stringify(records.recordset));
         }
+        //Close SQL
         sql.close();
       });
     }
